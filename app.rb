@@ -10,6 +10,7 @@ class Battle < Sinatra::Base
 get '/' do
   "Testing infrastructure working!"
   erb(:index)
+  # redirect('/play')
 end
 
 # start the server if ruby file executed directly

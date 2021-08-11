@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader'
 
-class Battle < Sinatra::Base
+class Battle < Sinatra::Base  
   configure :development do
     register Sinatra::Reloader
   end
@@ -9,6 +9,7 @@ class Battle < Sinatra::Base
 
 get '/' do
   "Testing infrastructure working!"
+  erb(:index)
 end
 
 # start the server if ruby file executed directly

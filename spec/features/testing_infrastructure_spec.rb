@@ -1,4 +1,4 @@
-feature 'Testing Infrastructure' do
+#feature 'Testing Infrastructure' do
 
   # scenario 'Can run app and checks for content' do
   #   visit('/') #visiting the root page
@@ -6,9 +6,4 @@ feature 'Testing Infrastructure' do
 
   # end
 
-  scenario "we have a form with an input" do
-    visit('/')
-    expect(find('//form/input')).not_to be(nil)
-    expect(find("//form/input[@id='name_id']")).not_to be(nil)
-  end
-end
+#end

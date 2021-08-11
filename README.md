@@ -1,2 +1,2 @@
  # battle
-Battle challenge initiated with Radu
+week3 challenge battle challenge initiated with Radu

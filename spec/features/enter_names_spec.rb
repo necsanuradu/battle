@@ -1,3 +1,4 @@
+require './lib/battle.rb'
 feature 'testing form features' do
 
   scenario "we have a form with an input of player1" do
@@ -20,17 +21,9 @@ feature 'testing form features' do
     visit ("/")
     # player1 = find("//form/input[@name='player1']")
     # player2 = find("//form/input[@name='player2']")
-    fill_in(:player1, with: 'Player1')
-    fill_in(:player2, with: 'Player2')
-    find("//form/[type='submit']").click
-    names = find("//section[@id='player_name']")
-    expect(names).to have_content("Player1 vs. Player2")
+    sign_in_and_play
+    expect(page).to have_content("Player1 vs. Player2")
   end
 
-  scenario 'Displays player 1 health' do
-    visit('/play')
-    score = find("//section[@id='health']/div[@player1='60/60 HP']")
-    expect(score).not_to be(nil)
-  end
 
 end

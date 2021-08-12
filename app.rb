@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader'
+# require './lib/battle.rb'
 
 class Battle < Sinatra::Base  
   configure :development do
@@ -23,8 +24,9 @@ end
 get '/play'  do
   @player1 = session[:player1]
   @player2 = session[:player2]
-  @health1 = "60/60 HP"
-  @health2 = "60/60 HP"
+  @health1 = 60
+  @health2 = 60
+  @default_health = 60
   erb(:play)
 end
 

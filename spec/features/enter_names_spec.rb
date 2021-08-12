@@ -23,6 +23,14 @@ feature 'testing form features' do
     fill_in(:player1, with: 'Player1')
     fill_in(:player2, with: 'Player2')
     find("//form/[type='submit']").click
-    expect(page).to have_content("Player1: Player1 vs Player2: Player2")
+    names = find("//section[@id='player_name']")
+    expect(names).to have_content("Player1 vs. Player2")
   end
+
+  scenario 'Displays player 1 health' do
+    visit('/play')
+    score = find("//section[@id='health']/div[@player1='60/60 HP']")
+    expect(score).not_to be(nil)
+  end
+
 end

@@ -4,5 +4,6 @@ gem 'rspec'
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'capybara'
-gem 'selenium-webdriver'
+gem 'selenium-webdriver' # implementation of browser
 gem 'webrick'
+# gem 'launchy'

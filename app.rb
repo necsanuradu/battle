@@ -10,7 +10,7 @@ class Battle < Sinatra::Base
   enable :sessions
 
 get '/' do
-  "Testing infrastructure working!"
+  # "Testing infrastructure working!"
   erb(:index)
   # redirect('/play')
 end

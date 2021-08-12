@@ -18,7 +18,7 @@ feature 'testing form features' do
   end
 
   scenario "changes player1 and player2 name value submits and expect landing view to have content" do
-    # visit ("/")
+    visit ('/')
     # player1 = find("//form/input[@name='player1']")
     # player2 = find("//form/input[@name='player2']")
     sign_in_and_play

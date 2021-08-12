@@ -9,7 +9,8 @@
 </section>
 
 <section id='attack'>
-  <form action='/play' method='post'>
-    <button id='attack' type='submit'>Attack</button>
+  <form action='/attack' method='get'>
+    <input id='attack' type='submit' value="Attack"/>
+    <input type="hidden" name="who_attacks" value="<%= @player1 %>"/>
   </form>
 </section>

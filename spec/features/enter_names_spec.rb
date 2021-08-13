@@ -1,4 +1,4 @@
-require './lib/battle.rb'
+
 feature 'testing form features' do
 
   scenario "we have a form with an input of player1" do
